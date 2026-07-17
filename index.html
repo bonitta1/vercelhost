@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #f5f5f5;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 1rem 1.5rem;
+    }
+
+    .post-content h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-content p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222;
+      color: #ccc;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Blog</h2>
+    <p>Sharing thoughts, stories, and tutorials about technology, life, and creativity.</p>
+  </section>
+
+  <section class="posts">
+    <article class="post">
+      <img src="https://picsum.photos/600/400?random=1" alt="Blog 1">
+      <div class="post-content">
+        <h3>How to Start a Blog in 2025</h3>
+        <p>Learn how to start your own blog — from choosing a niche to publishing your first post.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="https://picsum.photos/600/400?random=2" alt="Blog 2">
+      <div class="post-content">
+        <h3>Top 10 Productivity Tools</h3>
+        <p>Here are the best apps and methods to stay organized and productive this year.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="https://picsum.photos/600/400?random=3" alt="Blog 3">
+      <div class="post-content">
+        <h3>Designing Minimalist Websites</h3>
+        <p>Tips and examples for building clean, simple, and beautiful websites that users love.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2025 My Blog. All rights reserved.
+  </footer>
+
+</body>
+</html>
